@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/add.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Catálogo LigLig</h1>
+  </header>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="#">Adicionar</a>
+  </nav>
+
+  <form action="" class="add__product" data-form>
+    <h1>Adicionar roupa</h1>
+    <p class="img__select" data-imgFile>dasdsa</p>
+    <div class="add__product--upload">
+      <label for='select' class="btn__submit label">Selecionar imagem
+        <input id='select' type='file' class="add__product--select" multiple accept="image/*" />
+      </label>
+    </div>
+    <div class="add__product--input">
+      <input type="text" placeholder="Referência" required id="ref" />
+      <input type="text" placeholder="Preço" id="preco" />
+      <textarea placeholder="Descrição do produto" required id="descricao"></textarea>
+      <input type="submit" class="btn__submit" value="Adicionar produto" data-send>
+    </div>
+    <div class="msg" data-msg>Cadastrado com sucesso</div>
+  </form>
+  <script type="module" src="../js/api.js"></script>
+</body>
+
+</html>
