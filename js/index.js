@@ -19,9 +19,9 @@ export function cards(produtos){
 }
 
 
-window.onload = function () {
+window.onload = async function () {
   
-  cards(lista)
+  await cards(lista)
 }
 
 
