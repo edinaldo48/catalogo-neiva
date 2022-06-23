@@ -19,14 +19,9 @@ export function cards(produtos){
 }
 
 
-export function nav(paths) {
-
+window.onload = function () {
   
-}
-
-window.onload = async function () {
-  
-  await cards(lista)
+  cards(lista)
 }
 
 
